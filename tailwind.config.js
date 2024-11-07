@@ -11,7 +11,12 @@ export default {
       },
 
       colors: {
-        mainBg: "#1E1E1E",
+        mainBg: "#161616",
+        grayAccent: "#292929",
+        line: "#4C4C4C",
+        headers: "#FFFFFF",
+        text: "#8C8C8C",
+        mode: "#FFC11C",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
