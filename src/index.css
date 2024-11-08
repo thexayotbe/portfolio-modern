@@ -75,12 +75,15 @@
     @apply bg-grayAccent rounded-xl border-[1px] border-line;
   }
   .title {
-    @apply text-headers text-base font-extralight;
+    @apply text-headers text-sm font-light pb-1;
   }
   .text {
     @apply text-text text-sm font-extralight;
   }
   .line {
     @apply border-b-line border-b-[1px];
+  }
+  .custom-border {
+    @apply border-line border-[1px] rounded-md;
   }
 }
