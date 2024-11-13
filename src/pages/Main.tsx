@@ -36,7 +36,7 @@ const Main = () => {
         {/* <Line /> */}
       </div>
 
-      <div className="basis-4/6 ">
+      <div className="basis-4/6">
         <MainCards />
       </div>
       <div className="basis-1/6  border-t-line border-t-[1px] mt-5 flex justify-between text-text text-sm pt-5">

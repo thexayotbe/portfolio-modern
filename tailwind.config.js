@@ -16,6 +16,9 @@ export default {
         headers: "#FFFFFF",
         text: "#8C8C8C",
         mode: "#FFC11C",
+        cards: {
+          yellow: "#C8A17D",
+        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

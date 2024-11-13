@@ -69,3 +69,49 @@ export const slugs = [
   "sonarqube",
   "figma",
 ];
+
+const colors = [
+  "#c9b69a",
+  "#bfa7f8",
+  "#f3b2a3",
+  "#ffffff",
+  "#a9c9f1",
+  "#b9e5bc",
+];
+export const skills = [
+  {
+    title: "React.JS",
+    color: colors[Math.floor(Math.random() * colors.length)],
+    positions: "top-[20%] left-3",
+  },
+  {
+    title: "Typescript",
+    color: colors[Math.floor(Math.random() * colors.length)],
+    positions: "top-[15%] right-4",
+  },
+  {
+    title: "Tailwind.CSS",
+    color: colors[Math.floor(Math.random() * colors.length)],
+    positions: "top-[40%] left-12",
+  },
+  {
+    title: "Next.JS",
+    color: colors[Math.floor(Math.random() * colors.length)],
+    positions: "top-[60%] right-5",
+  },
+  {
+    title: "Redux",
+    color: colors[Math.floor(Math.random() * colors.length)],
+    positions: "top-[65%] left-5",
+  },
+  {
+    title: "BootStrap",
+    color: colors[Math.floor(Math.random() * colors.length)],
+    positions: "top-[70%] left-[40%]",
+  },
+  {
+    title: "Framer Motions",
+    color: colors[Math.floor(Math.random() * colors.length)],
+    positions: "top-[35%] right-8",
+  },
+];
