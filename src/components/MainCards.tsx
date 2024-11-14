@@ -1,7 +1,6 @@
 import { skills } from "@/constants";
 import Card from "./ui/Card";
 import SkillsCards from "./ui/SkillsCards";
-
 const MainCards = () => {
   return (
     <div className="grid grid-cols-6 grid-rows-4 gap-5 w-[100%] h-[100%]">
@@ -19,13 +18,14 @@ const MainCards = () => {
       </Card>
       <Card title={"Skills"} className={"col-start-3 col-span-2 row-span-2"}>
         <div className="p-5 relative   h-[300px]">
-          {skills.map(({ title, color, positions }) => {
+          {skills.map(({ title, color, positions, animation }) => {
             return (
               <SkillsCards
                 key={title}
                 title={title}
                 color={color}
                 positions={positions}
+                animation={animation}
               />
             );
           })}

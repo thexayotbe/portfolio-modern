@@ -2,14 +2,14 @@ import contact from "@/assets/icons/contact.svg";
 import profilePicuture from "@/assets/images/profile.jpg";
 import MainCards from "@/components/MainCards";
 import SwitchMode from "@/components/ui/SwitchMode";
+import { motion } from "motion/react";
 import { useState } from "react";
 import { FaGithubSquare } from "react-icons/fa";
-
 const Main = () => {
   let [switchMode, setSwitchMode] = useState<boolean>(false);
 
   return (
-    <div className="main-container h-[100vh] flex flex-col gap-5 relative">
+    <motion.div className="main-container h-[100vh] flex flex-col gap-5 relative">
       <SwitchMode
         switchMode={switchMode}
         onClick={() => setSwitchMode(!switchMode)}
@@ -36,16 +36,21 @@ const Main = () => {
         {/* <Line /> */}
       </div>
 
-      <div className="basis-4/6">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }} // Start with hidden content
+        animate={{ opacity: 1, y: 0 }} // Fade and slide up to visible position
+        transition={{ duration: 1, delay: 0.2 }}
+        className="basis-4/6"
+      >
         <MainCards />
-      </div>
+      </motion.div>
       <div className="basis-1/6  border-t-line border-t-[1px] mt-5 flex justify-between text-text text-sm pt-5">
         <p>&#169; 2024</p>
         <a href="">
           <FaGithubSquare className="text-4xl" />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
